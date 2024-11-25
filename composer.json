@@ -1,0 +1,30 @@
+{
+    "name": "yeswedev/custom-content-manager",
+    "description": "Define and register Custom Post Types, Blocks, and their ACF fields",
+    "type": "plugin",
+    "autoload": {
+        "psr-4": {
+            "YwdCustomContentManager\\": "./src",
+            "YwdCustomContentManager\\PostTypes\\": "src/PostTypes",
+            "YwdCustomContentManager\\Taxonomies\\": "src/Taxonomies"
+        }
+    },
+    "authors": [
+        {
+            "name": "Glenou",
+            "email": "glen.s@yeswedev.bzh"
+        }
+    ],
+    "require-dev": {
+        "nunomaduro/phpinsights": "^2.12"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "insights": "./vendor/bin/phpinsights --config-path='./config/insights.php'",
+        "insights-fix": "./vendor/bin/phpinsights --config-path='./config/insights.php' --fix"
+    }
+}
