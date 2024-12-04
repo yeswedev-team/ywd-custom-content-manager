@@ -1,7 +1,7 @@
 {
     "name": "yeswedev/custom-content-manager",
     "description": "Define and register Custom Post Types, Blocks, and their ACF fields",
-    "type": "plugin",
+    "type": "wordpress-plugin",
     "autoload": {
         "psr-4": {
             "YwdCustomContentManager\\": "./src",
